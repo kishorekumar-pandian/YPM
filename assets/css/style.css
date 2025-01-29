@@ -185,23 +185,15 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*-------------------------------------
         3.  Welcome-hero
 --------------------------------------*/
-.welcome-hero {
-    display: flex; /* Use flexbox to align items if needed */
-    align-items: flex-start; /* Align to the top-left */
-    justify-content: flex-start; /* Align to the left */
-    position: relative;
-    background: url(../images/about/welcome-banner.jpeg) no-repeat;
-    background-size: cover; /* Scales image to cover container */
-    background-position: center; /* Ensures the image is centered */
-    background-attachment: fixed; /* Keeps the background fixed when scrolling */
-    height: 490px;
-    width: 100%; /* Ensures the width is responsive */
-}
-
-@media (max-width: 768px) {
-    .welcome-hero {
-        height: 300px; /* Adjust height on smaller screens if necessary */
-    }
+.welcome-hero{
+    display: fixed;
+    align-items: left;
+    justify-content: left;
+    position:relative;
+    background:url(../images/about/welcome-banner.jpeg)no-repeat;
+    background-size:auto;
+    background-position: center;
+    height:490px;
 }
 .welcome-hero:before{
     position:absolute;
@@ -573,6 +565,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .profile-txt {
     display: flex;
     align-items: center;
+	text-align: center; 
     flex-direction: column;
 }
 .single-profile {
@@ -594,7 +587,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     color: #636a82;
     font-size: 16px;
 }
-.single-profile.profile-no-border{border-right:transparent;}
+.single-profile.profile-no-border{border-right:transparent; }
 .profile-border {
     border-bottom: 1px solid #b2c1ce;
 }
