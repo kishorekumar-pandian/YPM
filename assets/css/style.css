@@ -185,15 +185,23 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*-------------------------------------
         3.  Welcome-hero
 --------------------------------------*/
-.welcome-hero{
-    display: fixed;
-    align-items: left;
-    justify-content: left;
-    position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
-    background-size:auto;
-    background-position: center;
-    height:490px;
+.welcome-hero {
+    display: flex; /* Use flexbox to align items if needed */
+    align-items: flex-start; /* Align to the top-left */
+    justify-content: flex-start; /* Align to the left */
+    position: relative;
+    background: url(../images/about/welcome-banner.jpeg) no-repeat;
+    background-size: cover; /* Scales image to cover container */
+    background-position: center; /* Ensures the image is centered */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    height: 490px;
+    width: 100%; /* Ensures the width is responsive */
+}
+
+@media (max-width: 768px) {
+    .welcome-hero {
+        height: 300px; /* Adjust height on smaller screens if necessary */
+    }
 }
 .welcome-hero:before{
     position:absolute;
